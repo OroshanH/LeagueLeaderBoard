@@ -99,7 +99,6 @@ function displayUser(user,rank) {
 
 
     const rankIconImg = document.createElement('img');
-    console.log(`User tier: ${user.tier}`);
     rankIconImg.src = `/bilder/${user.tier}.png`;
     rankIconImg.alt = `${user.rank} Icon`;
     rankIconImg.style.width = '80px';

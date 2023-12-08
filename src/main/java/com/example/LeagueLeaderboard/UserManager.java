@@ -6,8 +6,8 @@ import java.util.List;
 public class UserManager {
     public static List<User> createUsers() {
         List<User> users = new ArrayList<>();
-        String[] summonerKeys = {"nucpfTk-8jOxqEZxpRKmZajIaxB0L6hfkYG-1PtXqt2kz8Y", "1dKoepWaQD24YOrTzGJBLyA6jcPXZykKbwwp-jEn7VNqJ7g", "rwRsKG_oYqa46cxzY_iEduqEHTpcuLWKkxk2UNSxkGZr-M43", "o8ZKeiXIP9--fMl5XhuKUcL_HlIJwSMiAWyD3pD9FoCagLM", "JQHrTrMz52CSWDCXBqJcPjfEnG39trDmosJBi2SbxzOY2HY", "zvFluL5NMOtCIQ_e5OAdjntnMlc4AO2gFmaR0z8oWzmEWFw", "mMpGbfiC8L4GB2GaP4jkP7r8s8OYsMMYtRjY9EPP1Vif8w8", "i1bysGNy6oTa34mt2yJpLOq1nRmQmgh997VNbGJ3qDtwYRE", "BohVl15AUB2RMv8qXqLl9nqcgZgD825uUdI9r3ySG_lDYFkkEbtzvnIiqg", "Wdid_3BO3DYbJeEI36Xh1r4o5zc9j-Tauj9kGDTUQCzGA_P3","uHrv44LJ-fIYPh-p0hyh-16JS_cHH3a8WDjVZ5r2qZebMAQ"};
-        String[] summonerNames = {"Oro", "Ost", "Sam", "Len", "Larris", "Rasmus", "Ole", "Leon","Birk","Ibra","Peter"};
+        String[] summonerKeys = {"nucpfTk-8jOxqEZxpRKmZajIaxB0L6hfkYG-1PtXqt2kz8Y", "1dKoepWaQD24YOrTzGJBLyA6jcPXZykKbwwp-jEn7VNqJ7g", "rwRsKG_oYqa46cxzY_iEduqEHTpcuLWKkxk2UNSxkGZr-M43", "o8ZKeiXIP9--fMl5XhuKUcL_HlIJwSMiAWyD3pD9FoCagLM", "JQHrTrMz52CSWDCXBqJcPjfEnG39trDmosJBi2SbxzOY2HY", "zvFluL5NMOtCIQ_e5OAdjntnMlc4AO2gFmaR0z8oWzmEWFw", "mMpGbfiC8L4GB2GaP4jkP7r8s8OYsMMYtRjY9EPP1Vif8w8", "i1bysGNy6oTa34mt2yJpLOq1nRmQmgh997VNbGJ3qDtwYRE", "BohVl15AUB2RMv8qXqLl9nqcgZgD825uUdI9r3ySG_lDYFkkEbtzvnIiqg", "Wdid_3BO3DYbJeEI36Xh1r4o5zc9j-Tauj9kGDTUQCzGA_P3","uHrv44LJ-fIYPh-p0hyh-16JS_cHH3a8WDjVZ5r2qZebMAQ","TRj_FIzcX6eNXnWfv_b7dmqZpd04vZjutpCTk-x57M-uyLcD"};
+        String[] summonerNames = {"Oro", "Ost", "Sam", "Len", "Larris", "Rasmus", "Ole", "Leon","Birk","Ibra","Peter","Elias"};
         String[] profilePictureUrls = {
                 "/bilder/oro.png",
                 "/bilder/ost.png",
@@ -19,7 +19,8 @@ public class UserManager {
                 "/bilder/leon.png",
                 "/bilder/birk.jpg",
                 "/bilder/ibra.png",
-                "/bilder/peter.png"
+                "/bilder/peter.png",
+                "/bilder/elias.png"
         };
 
         String[] rolePictureUrls = {
@@ -33,10 +34,11 @@ public class UserManager {
                 "/bilder/adc.png",
                 "/bilder/jungle.png",
                 "/bilder/top.png",
-                "/bilder/mid.png"
+                "/bilder/mid.png",
+                "/bilder/top.png"
         };
 
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i < 12; i++) {
             User user = new User();
             user.setSummonerKey(summonerKeys[i]);
             user.setSummonerName(summonerNames[i]);
