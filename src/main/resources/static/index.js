@@ -2,7 +2,7 @@
 
 async function fetchUserList() {
     try {
-        const response = await fetch('https://leagueleaderboard-3e1f1b9aa6da.herokuapp.com/api/brukere');
+        const response = await fetch('https://leagueleaderboard-3e1f1b9aa6da.herokuapp.com/api/users');
         const users = await response.json();
         return users;
     } catch (error) {
