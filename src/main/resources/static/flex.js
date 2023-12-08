@@ -2,7 +2,7 @@
 
 async function fetchUserList() {
     try {
-        const response = await fetch('http://localhost:8080/api/users');
+        const response = await fetch('http://localhost:8080/api/brukere');
         const users = await response.json();
         return users;
     } catch (error) {
@@ -15,7 +15,7 @@ async function fetchAndDisplayLeagueData(summonerKey, navn, users) {
         const response = await fetch(`https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/${summonerKey}?api_key=RGAPI-e31dd43c-0e02-4771-b5fd-ff882fd59324`);
         const data = await response.json();
 
-        const soloQEntry = data.find(entry => entry.queueType === 'RANKED_SOLO_5x5');
+        const soloQEntry = data.find(entry => entry.queueType === 'RANKED_FLEX_SR');
 
         if (soloQEntry) {
 
