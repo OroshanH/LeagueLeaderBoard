@@ -115,10 +115,13 @@ function displayUser(user,rank) {
 
 
     const rightSectionDiv = document.createElement('div');
-    rightSectionDiv.textContent = `Wins: ${user.wins} Losses: ${user.losses}`;
 
+    const totalGames = user.wins + user.losses;
+    const winRate = totalGames > 0 ? Math.round((user.wins / totalGames) * 100) + '%' : 'N/A';
 
-    rightSectionDiv.style.width = '250px';
+    rightSectionDiv.textContent = `${user.wins}W - ${user.losses}L - ${winRate}`;
+
+    rightSectionDiv.style.width = '200px'
 
 
     containerDiv.appendChild(leftSectionDiv);
